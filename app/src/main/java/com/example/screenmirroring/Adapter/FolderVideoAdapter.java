@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.screenmirroring.R;
-import com.example.screenmirroring.connect_TV.PlayVideoActivity;
+import com.example.screenmirroring.VideoPlayer.VideoProjectorActivity;
 
 import java.util.ArrayList;
 
@@ -62,7 +62,7 @@ public class FolderVideoAdapter extends RecyclerView.Adapter<FolderVideoAdapter.
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    activity.startActivity(new Intent(activity, PlayVideoActivity.class).putExtra("url", list.get(getAdapterPosition())));
+                    activity.startActivity(new Intent(activity, VideoProjectorActivity.class).putExtra("url", list.get(getAdapterPosition())));
                 }
             });
         }

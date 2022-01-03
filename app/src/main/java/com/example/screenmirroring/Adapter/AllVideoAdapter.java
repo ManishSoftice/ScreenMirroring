@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.screenmirroring.R;
 import com.example.screenmirroring.VideoModel;
-import com.example.screenmirroring.connect_TV.PlayVideoActivity;
+import com.example.screenmirroring.VideoPlayer.VideoProjectorActivity;
 
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
@@ -67,7 +67,7 @@ public class AllVideoAdapter extends RecyclerView.Adapter<AllVideoAdapter.Myclas
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    activity.startActivity(new Intent(activity, PlayVideoActivity.class).putExtra("url",videoList.get(getAdapterPosition()).getStr_path()));
+                    activity.startActivity(new Intent(activity, VideoProjectorActivity.class).putExtra("url", videoList.get(getAdapterPosition()).getStr_path()));
                 }
             });
         }

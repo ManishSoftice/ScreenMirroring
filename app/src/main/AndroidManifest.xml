@@ -15,90 +15,100 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ScreenMirroring">
         <activity
+            android:name=".VideoPlayer.VideoProjectorActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ExitActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Gallery.FullScreenImageActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Gallery.AlbumPhotosActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Gallery.AllPhotoFolderActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VideoPlayer.FolderVideoActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VideoPlayer.VideoPlayerActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.PlayVideoActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.PlayvideonowActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.HowToUseActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.Steps_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.Proccess_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.Select_Mode_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.All_Compny_Name_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".connect_TV.Connect_tv_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.Main_Screen_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.Second_Start_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.First_Start_Activity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.Splash"
             android:exported="true"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -109,7 +119,7 @@
             android:name=".MainActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="reversePortrait" />
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

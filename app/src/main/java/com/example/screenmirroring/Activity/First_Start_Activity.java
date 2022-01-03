@@ -36,12 +36,18 @@ public class First_Start_Activity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        if(requestCode == 1){
-            if(grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED){
+        if (requestCode == 1) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
 
-            }else {
+            } else {
                 Toast.makeText(this, "Please allow Permissions", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(First_Start_Activity.this, ExitActivity.class));
     }
 }

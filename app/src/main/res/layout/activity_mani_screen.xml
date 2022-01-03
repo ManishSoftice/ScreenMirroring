@@ -41,13 +41,6 @@
                 android:text="Gallery"
                 android:layout_margin="@dimen/_8sdp"
                 android:textAllCaps="false"/>
-            <Button
-                android:id="@+id/play_game"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
-                android:text="Play Game"
-                android:layout_margin="@dimen/_8sdp"
-                android:textAllCaps="false"/>
 
         </LinearLayout>
     </ScrollView>

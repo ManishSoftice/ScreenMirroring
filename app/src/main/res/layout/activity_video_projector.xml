@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nativeAdSmall"
+        android:background="#000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_video_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.15"
+                    android:background="#000000"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/llVideo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <VideoView
+                            android:id="@+id/vv_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/screen_1" />
+
+        <FrameLayout
+            android:id="@+id/fl_light"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_above="@+id/rlMobile"
+            android:layout_marginBottom="-12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/light_a" />
+
+            <ImageView
+                android:id="@+id/ivLightB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:layout_toLeftOf="@+id/fl_mobileview"-->
+            <!--                android:gravity="center">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/ivPrevious"-->
+            <!--                    android:layout_width="40.0dip"-->
+            <!--                    android:layout_height="40.0dip"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:background="@drawable/round"-->
+            <!--                    android:padding="4.0dip"-->
+            <!--                    android:src="@drawable/ic_arrow_left" />-->
+
+            <!--            </LinearLayout>-->
+
+            <FrameLayout
+                android:id="@+id/fl_mobileview"
+                android:layout_width="250.0dip"
+                android:layout_height="140.0dip"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingStart="14.0dip"
+                            android:paddingTop="6.0dip"
+                            android:paddingEnd="14.0dip"
+                            android:paddingBottom="5.0dip">
+
+                            <RelativeLayout
+                                android:id="@+id/llVideo2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#000000">
+
+                                    <VideoView
+                                        android:id="@+id/vv_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true" />
+
+                                    <LinearLayout
+                                        android:id="@+id/showProgress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="#88000000"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingLeft="@dimen/_7sdp"
+                                        android:paddingRight="@dimen/_7sdp">
+
+                                        <ImageView
+                                            android:id="@+id/pause"
+                                            android:layout_width="@dimen/_18sdp"
+                                            android:layout_height="@dimen/_18sdp"
+                                            app:srcCompat="@drawable/hvp3_play" />
+
+                                        <TextView
+                                            android:id="@+id/current"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_1sdp"
+                                            android:text="00:00"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="9dp" />
+
+                                        <SeekBar
+                                            android:id="@+id/seekbar"
+                                            style="@style/Base.Widget.AppCompat.SeekBar"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:theme="@style/SeekBar" />
+
+                                        <TextView
+                                            android:id="@+id/total"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="00:00"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_device"
+                    android:layout_width="250.0dip"
+                    android:layout_height="140.0dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/device" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/fl_mobileview"
+                android:gravity="center">
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/ivNext"-->
+                <!--                    android:layout_width="40.0dip"-->
+                <!--                    android:layout_height="40.0dip"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:background="@drawable/round"-->
+                <!--                    android:padding="4.0dip"-->
+                <!--                    android:src="@drawable/ic_arrow_right" />-->
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_13sdp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Video"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nativeAdSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="vertical" />
+
+</RelativeLayout>
