@@ -25,6 +25,7 @@ public class ExitActivity extends AppCompatActivity {
     }
 
     private void todo() {
+
         binding.btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
