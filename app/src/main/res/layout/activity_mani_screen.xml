@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
     tools:context=".Activity.Main_Screen_Activity">
 
     <ScrollView
@@ -20,27 +21,138 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
-            <Button
+            <include
+                android:id="@+id/nativeAd_layout"
+                layout="@layout/native_big" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/connect_to_tv"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
                 android:text="Connect to TV"
-                android:layout_margin="@dimen/_8sdp"
-                android:textAllCaps="false"/>
-            <Button
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_round_transperent_red"
+                android:textAllCaps="false">
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_curve_red"
+                    android:fontFamily="@font/comici"
+                    android:gravity="left|center"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:text="CONNECT TO TV"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/iv_connect_tv"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/bg_circle"
+                    app:layout_constraintEnd_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/video_player"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
-                android:text="Video Player"
-                android:layout_margin="@dimen/_8sdp"
-                android:textAllCaps="false"/>
-            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_round_transperent_blue"
+                android:text="Connect to TV"
+                android:textAllCaps="false">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_curve_blue"
+                    android:fontFamily="@font/comici"
+                    android:gravity="left|center"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:text="VIDEO PLAYER"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/iv_video_palyer"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/bg_circle"
+                    app:layout_constraintEnd_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/gallery"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
-                android:text="Gallery"
-                android:layout_margin="@dimen/_8sdp"
-                android:textAllCaps="false"/>
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_round_transperent_green"
+                android:text="Connect to TV"
+                android:textAllCaps="false">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_curve_green"
+                    android:fontFamily="@font/comici"
+                    android:gravity="left|center"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:text="GALLERY"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_11sdp"
+                    android:src="@drawable/iv_gallery"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/bg_circle"
+                    app:layout_constraintEnd_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>

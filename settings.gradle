@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Screen Mirroring"
 include ':app'
+include ':softice'

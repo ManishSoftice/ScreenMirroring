@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Screen Mirroring</string>
+    <string name="app_name">HD Video Screen Mirroring</string>
+    <string name="under_maintenance">This Application under maintenance update will be soon</string>
+    <string name="ad_loading">Ad Loading</string>
 </resources>

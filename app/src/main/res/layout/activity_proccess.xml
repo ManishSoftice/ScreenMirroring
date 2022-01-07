@@ -4,9 +4,168 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
     tools:context=".connect_TV.Proccess_Activity">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/nativeAd_layout"
+                layout="@layout/native_big" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/ok"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:src="@drawable/ic_nofill_24" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comici_medium"
+                        android:text="Scanning for TVs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_1">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:src="@drawable/ic_nofill_24" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comici_medium"
+                        android:text="Detecting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_2">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:src="@drawable/ic_nofill_24" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comici_medium"
+                        android:text="Installing drivers"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_3">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:src="@drawable/ic_nofill_24" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comici_medium"
+                        android:text="Connecting"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/bg_btn_transperent_red"
+                android:fontFamily="@font/comici_medium"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -14,142 +173,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/comici_medium"
         android:text="Progress Running"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_16sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_100sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/loading" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/ok"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-
-        <LinearLayout
-            android:id="@+id/ll_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/image1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:src="@drawable/ic_nofill_24" />
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="Scanning for TVs"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:gravity="center_horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/ll_1">
-
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:src="@drawable/ic_nofill_24" />
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="Detecting"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/ll_2">
-
-            <ImageView
-                android:id="@+id/image3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:src="@drawable/ic_nofill_24" />
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="Installing drivers"
-                android:textColor="@color/black" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/ll_3">
-
-            <ImageView
-                android:id="@+id/image4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:src="@drawable/ic_nofill_24" />
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="Connecting"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
-    <Button
-        android:id="@+id/ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ok"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="@dimen/_8sdp"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

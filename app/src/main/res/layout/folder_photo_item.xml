@@ -52,6 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_minus2sdp"
                     android:textColor="@color/white" />
 
             </LinearLayout>

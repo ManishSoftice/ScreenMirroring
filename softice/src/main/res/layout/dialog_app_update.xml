@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/app_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/app_update" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="Update App"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_decription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Install our new app now and enjoy"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="We have transferred our server, so install our new app by clicking the button below to enjoy the new features of app."
+            android:textColor="@color/dialog_text_color"
+            android:textSize="10sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ad_button_background"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:text="@string/retry"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:strokeColor="@color/ad_end_color" />
+    </LinearLayout>
+
+
+</LinearLayout>

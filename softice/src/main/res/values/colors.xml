@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ad_end_color">#F40028</color>
+    <color name="ad_start_color">#F40028</color>
+    <color name="ad_text_color">#000000</color>
+    <color name="native_ad_text_color">#000000</color>
+    <color name="dialog_text_color">@color/black</color>
+    <color name="ad_background">#26000000</color>
+
+
+</resources>

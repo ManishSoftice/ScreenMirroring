@@ -4,17 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
     tools:context=".Activity.First_Start_Activity">
 
-    <Button
+    <include
+        android:id="@+id/nativeAd_layout"
+        layout="@layout/native_big" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
-        android:layout_marginBottom="@dimen/_16sdp"
-        android:text="start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/bg_btn_curve_red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/comici"
+            android:gravity="center"
+            android:text="START NOW"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/iv_start_now"
+        app:layout_constraintBottom_toBottomOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="@+id/start"
+        app:layout_constraintStart_toEndOf="@+id/start"
+        app:layout_constraintTop_toTopOf="@+id/start" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

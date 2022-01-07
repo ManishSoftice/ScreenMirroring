@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ad_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+
+                android:id="@+id/image_ad_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_icon"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_ad_title"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/ad"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_ad_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/ad_text_color"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/layout_icon"
+                    app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+
+            </LinearLayout>
+
+
+            <RatingBar
+                android:id="@+id/rating_bar_ad"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/ad_start_color"
+                android:stepSize="0.5"
+                app:layout_constraintStart_toStartOf="@+id/text_ad_title"
+                app:layout_constraintTop_toBottomOf="@+id/text_ad_title" />
+
+            <TextView
+                android:id="@+id/text_ad_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/native_ad_text_color"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_icon"
+                app:layout_constraintEnd_toEndOf="@+id/text_ad_title"
+                app:layout_constraintStart_toStartOf="@+id/text_ad_title"
+                app:layout_constraintTop_toBottomOf="@+id/rating_bar_ad" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/native_ad_MediaView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/layout_details"
+            app:layout_constraintStart_toStartOf="@+id/layout_icon"
+            app:layout_constraintTop_toBottomOf="@+id/layout_details" />
+
+        <TextView
+            android:id="@+id/text_advertiser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center|top"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/native_ad_text_color"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/native_ad_MediaView"
+            app:layout_constraintStart_toStartOf="@+id/native_ad_MediaView"
+            app:layout_constraintTop_toBottomOf="@+id/native_ad_MediaView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_call_to_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ad_button_background"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/native_ad_MediaView"
+            app:layout_constraintStart_toStartOf="@+id/native_ad_MediaView"
+            app:layout_constraintTop_toBottomOf="@+id/text_advertiser" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

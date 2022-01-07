@@ -1,0 +1,13 @@
+<resources>
+    <string name="retry">Retry Again</string>
+    <string name="update_title">Update Now</string>
+    <string name="update_sub_title">Update our new app now and enjoy</string>
+    <string name="install_title">Install Now</string>
+    <string name="install_sub_title">Install our new app now and enjoy</string>
+    <string name="install_descrption">We have transferred our server, so install our new app by clicking the button below to enjoy the new features of app.</string>
+    <string name="ad">Ad</string>
+    <string name="need_internet">Need Internet</string>
+    <string name="intenet_sub_title">Internet is necessary for load all functionality…!!</string>
+    <string name="ad_showing">Ad Showing..</string>
+    <string name="close_button">Close</string>
+</resources>

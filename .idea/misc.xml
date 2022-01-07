@@ -3,9 +3,64 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_black.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_black_blue_border.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_black_tanperent.xml" value="0.36512820512820515" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_btn_curve.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_btn_curve_blue.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_btn_curve_green.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_btn_transperent_red.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_circle.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_dark_buledark.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_dark_green.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_dark_yellow.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_round_dark_blue.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_round_dark_green.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_round_transperent.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_round_transperent_blue.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_round_transperent_green.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_round_transperent_red.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/bg_white_round.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/circle.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/ic_baseline_offline_pin_24.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/ic_nofill_24.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/drawable/iv_arrow_right.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_album_photos.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_all_compny_name.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_all_photo_folder.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_connect_tv.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_exit.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_first_start.xml" value="0.25" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_folder_video.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_full_screen_image.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_how_to_use.xml" value="0.2" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_mani_screen.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_playvideonow.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_proccess.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_second_start.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_select_mode.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_splash.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_steps.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_under_maintenance.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_video_player.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/activity_video_projector.xml" value="0.19739583333333333" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/all_video_item.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/folder_item.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/folder_photo_item.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/name_item.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/native_big.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/photo_item.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/layout/video_item.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37083333333333335" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/softice/src/main/res/layout/admob_big_native_ad_layout.xml" value="0.3546875" />
+        <entry key="..\:/Manish/01 January/Screen Mirroring/softice/src/main/res/layout/admob_small_native_ad_layout.xml" value="0.19739583333333333" />
         <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/circle.xml" value="0.3828125" />
         <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/hvp3_pause.xml" value="0.3828125" />
         <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/ic_arrow_left.xml" value="0.3828125" />
+        <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/ic_arrow_right.xml" value="0.3828125" />
+        <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/ic_arrow_right_24.xml" value="0.3828125" />
         <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/ic_back.xml" value="0.3828125" />
         <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/drawable/round.xml" value="0.3828125" />
         <entry key="..\:/Manish/Screen Mirroring/app/src/main/res/layout/activity_album_photos.xml" value="0.36666666666666664" />

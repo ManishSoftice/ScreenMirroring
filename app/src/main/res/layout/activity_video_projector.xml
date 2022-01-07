@@ -8,7 +8,7 @@
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/nativeAdSmall"
+        android:layout_above="@id/native_ad_layout"
         android:background="#000">
 
         <LinearLayout
@@ -93,24 +93,6 @@
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
             android:layout_marginBottom="25dp">
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_centerInParent="true"-->
-            <!--                android:layout_toLeftOf="@+id/fl_mobileview"-->
-            <!--                android:gravity="center">-->
-
-            <!--                <ImageView-->
-            <!--                    android:id="@+id/ivPrevious"-->
-            <!--                    android:layout_width="40.0dip"-->
-            <!--                    android:layout_height="40.0dip"-->
-            <!--                    android:layout_gravity="center"-->
-            <!--                    android:background="@drawable/round"-->
-            <!--                    android:padding="4.0dip"-->
-            <!--                    android:src="@drawable/ic_arrow_left" />-->
-
-            <!--            </LinearLayout>-->
 
             <FrameLayout
                 android:id="@+id/fl_mobileview"
@@ -240,15 +222,6 @@
                 android:layout_toRightOf="@+id/fl_mobileview"
                 android:gravity="center">
 
-                <!--                <ImageView-->
-                <!--                    android:id="@+id/ivNext"-->
-                <!--                    android:layout_width="40.0dip"-->
-                <!--                    android:layout_height="40.0dip"-->
-                <!--                    android:layout_gravity="center"-->
-                <!--                    android:background="@drawable/round"-->
-                <!--                    android:padding="4.0dip"-->
-                <!--                    android:src="@drawable/ic_arrow_right" />-->
-
             </LinearLayout>
         </RelativeLayout>
 
@@ -271,6 +244,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Video"
+                android:fontFamily="@font/comici_medium"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 
@@ -279,11 +253,23 @@
 
 
     <LinearLayout
-        android:id="@+id/nativeAdSmall"
+        android:id="@+id/native_ad_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:orientation="vertical" />
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comici_medium"
+            android:gravity="center"
+            android:text="@string/ad_loading"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
 </RelativeLayout>

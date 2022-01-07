@@ -2,33 +2,24 @@
     <!-- Base application theme. -->
     <style name="Theme.ScreenMirroring" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="SeekBar" parent="@style/Theme.VideoProjectorApp">
+    <style name="SeekBar" parent="@style/Theme.ScreenMirroring">
         <item name="colorControlActivated">@color/colorPrimary</item>
         <item name="colorControlNormal">@color/colorPrimary</item>
-    </style>
-
-    <style name="Theme.VideoProjectorApp" parent="Theme.AppCompat.Light.NoActionBar">
-
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>
-        <item name="android:windowDisablePreview">true</item>
-        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorPrimary
-        </item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
     </style>
 
 </resources>
