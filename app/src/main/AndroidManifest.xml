@@ -120,6 +120,11 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".Activity.UnderMaintenanceActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Activity.Splash_Activity"
             android:exported="true"
             android:launchMode="singleTop"
