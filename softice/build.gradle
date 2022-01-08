@@ -61,14 +61,13 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     api 'com.squareup.picasso:picasso:2.71828'
+
+
     //Lottie Animation
     implementation 'com.airbnb.android:lottie:4.2.1'
-
-    //Scalable Size Unit
-    implementation 'com.intuit.ssp:ssp-android:1.0.6'
-    implementation 'com.intuit.sdp:sdp-android:1.0.6'
-
     //Animation
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
 
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
 }

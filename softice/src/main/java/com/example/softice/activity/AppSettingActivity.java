@@ -156,7 +156,6 @@ public class AppSettingActivity extends AppCompatActivity {
             MobileAds.initialize(activity, initializationStatus -> {
                 AdMobNativeAd.getInstance(activity).LoadNativeAds();
             });
-
             if (appSettingListeners != null) {
                 appSettingListeners.onUnderMaintenance();
                 appSettingListeners = null;

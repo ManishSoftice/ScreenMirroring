@@ -300,10 +300,8 @@ public class AdMobNativeAd {
         LoadNativeAds();
         adView.getRoot().setIconView(adView.imageAdIcon);
         adView.getRoot().setHeadlineView(adView.textAdTitle);
-        adView.getRoot().setStarRatingView(adView.ratingBarAd);
         adView.getRoot().setBodyView(adView.textAdBody);
         adView.getRoot().setMediaView(adView.nativeAdMediaView);
-        adView.getRoot().setPriceView(adView.textAdvertiser);
         adView.getRoot().setCallToActionView(adView.buttonCallToAction);
         if (loadedNativeAd.getIcon() == null) {
             adView.imageAdIcon.setVisibility(View.GONE);
@@ -317,12 +315,7 @@ public class AdMobNativeAd {
             adView.textAdTitle.setVisibility(View.VISIBLE);
             adView.textAdTitle.setText(loadedNativeAd.getHeadline());
         }
-        if (loadedNativeAd.getStarRating() == null) {
-            adView.ratingBarAd.setVisibility(View.GONE);
-        } else {
-            adView.ratingBarAd.setVisibility(View.VISIBLE);
-            adView.ratingBarAd.setRating(loadedNativeAd.getStarRating().floatValue());
-        }
+
         if (loadedNativeAd.getBody() == null) {
             adView.textAdBody.setVisibility(View.GONE);
         } else {
@@ -337,12 +330,7 @@ public class AdMobNativeAd {
 //            adView.nativeAdMediaView.setImageScaleType(ImageView.ScaleType.FIT_CENTER);
 
         }
-        if (loadedNativeAd.getPrice() == null) {
-            adView.textAdvertiser.setVisibility(View.GONE);
-        } else {
-            adView.textAdvertiser.setVisibility(View.VISIBLE);
-            adView.textAdvertiser.setText(loadedNativeAd.getPrice());
-        }
+
         if (loadedNativeAd.getCallToAction() == null) {
             adView.buttonCallToAction.setVisibility(View.GONE);
         } else {
@@ -374,7 +362,7 @@ public class AdMobNativeAd {
         adView.getRoot().setIconView(adView.imageAdIcon);
         adView.getRoot().setHeadlineView(adView.textAdTitle);
         adView.getRoot().setBodyView(adView.textAdBody);
-        adView.getRoot().setStarRatingView(adView.ratingBarAd);
+
         adView.getRoot().setMediaView(adView.nativeAdMediaView);
         adView.getRoot().setCallToActionView(adView.buttonCallToAction);
         if (loadedNativeAd.getIcon() == null) {
@@ -389,12 +377,7 @@ public class AdMobNativeAd {
             adView.textAdTitle.setVisibility(View.VISIBLE);
             adView.textAdTitle.setText(loadedNativeAd.getHeadline());
         }
-        if (loadedNativeAd.getStarRating() == null) {
-            adView.ratingBarAd.setVisibility(View.GONE);
-        } else {
-            adView.ratingBarAd.setVisibility(View.VISIBLE);
-            adView.ratingBarAd.setRating(loadedNativeAd.getStarRating().floatValue());
-        }
+
         if (loadedNativeAd.getBody() == null) {
             adView.textAdBody.setVisibility(View.GONE);
         } else {

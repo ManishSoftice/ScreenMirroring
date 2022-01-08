@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/native_ad_MediaView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/_150sdp"
         android:background="@color/ad_start_color"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +34,8 @@
 
         <ImageView
             android:id="@+id/ad_icon"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
             android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="@+id/native_ad_MediaView"
             app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/_60sdp"
         android:background="@color/ad_start_color"
         app:layout_constraintBottom_toBottomOf="parent">
 

@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/small_native_view"
+    android:background="@color/ad_background"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/ad_background"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -78,7 +78,7 @@
                     android:includeFontPadding="false"
                     android:singleLine="true"
                     android:text=""
-                    android:textColor="@color/ad_text_color"
+                    android:textColor="@color/ad_start_color"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/layout_icon"
@@ -98,7 +98,7 @@
                 android:includeFontPadding="false"
                 android:maxLines="2"
                 android:text=""
-                android:textColor="@color/native_ad_text_color"
+                android:textColor="@color/white"
                 android:textSize="10sp"
                 android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="@+id/layout_icon"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/small_native_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/small_native_view"
     android:background="@color/ad_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,9 +37,9 @@
         <LinearLayout
             android:id="@+id/layout_details"
             android:layout_width="0dp"
+            android:layout_marginEnd="4dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="4dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toStartOf="@+id/button_call_to_action"
             app:layout_constraintStart_toEndOf="@+id/layout_icon"
@@ -74,7 +74,7 @@
                     android:includeFontPadding="false"
                     android:singleLine="true"
                     android:text=""
-                    android:textColor="@color/white"
+                    android:textColor="@color/ad_start_color"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/layout_icon"
@@ -112,9 +112,9 @@
             android:background="@drawable/ad_button_background"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:paddingHorizontal="5dp"
             android:textColor="@color/white"
             android:textSize="16sp"
+            android:paddingHorizontal="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

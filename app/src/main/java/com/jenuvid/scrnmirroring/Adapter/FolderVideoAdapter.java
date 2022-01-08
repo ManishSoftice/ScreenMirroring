@@ -16,7 +16,8 @@ import com.example.softice.ad.AdShow;
 import com.example.softice.ad.HandleClick.HandleClick;
 import com.example.softice.utils.AdUtils;
 import com.jenuvid.scrnmirroring.R;
-import com.jenuvid.scrnmirroring.VideoPlayer.VideoProjectorActivity;
+import com.jenuvid.scrnmirroring.Utils.Constat;
+import com.jenuvid.scrnmirroring.VideoPlayer.ProjectorThemeActivity;
 
 import java.util.ArrayList;
 
@@ -69,7 +70,8 @@ public class FolderVideoAdapter extends RecyclerView.Adapter<FolderVideoAdapter.
                     AdShow.getInstance(activity).ShowAd(new HandleClick() {
                         @Override
                         public void Show(boolean adShow) {
-                            activity.startActivity(new Intent(activity, VideoProjectorActivity.class).putExtra("url", list.get(getAdapterPosition())));
+                            Constat.videopath = list.get(getAdapterPosition());
+                            activity.startActivity(new Intent(activity, ProjectorThemeActivity.class));
 
                         }
                     }, AdUtils.ClickType.MAIN_CLICK);

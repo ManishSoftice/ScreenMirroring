@@ -7,49 +7,101 @@
     android:background="@drawable/bg_screen"
     tools:context=".Activity.Second_Start_Activity">
 
-    <include
-        android:id="@+id/nativeAd_layout"
-        layout="@layout/native_big"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/second_start"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginHorizontal="@dimen/_40sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_5sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/bg_round_transperent_red"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/native_ad_layout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/nativeAd_layout"
+                layout="@layout/native_big" />
 
             <TextView
-                android:id="@+id/clickstart"
+                android:id="@+id/how_to_use"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_toStartOf="@+id/arrow"
-                android:background="@drawable/bg_btn_curve_red"
-                android:fontFamily="@font/comici"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_dark_yellow"
+                android:fontFamily="@font/comici_medium"
                 android:gravity="center"
-                android:text="Click to Start"
+                android:text="HOW TO USE"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14ssp" />
 
-            <ImageView
-                android:id="@+id/arrow"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/iv_arrow_right" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/second_start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bg_round_transperent_red">
 
-        </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/clickstart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/arrow"
+                        android:background="@drawable/bg_btn_curve_red"
+                        android:fontFamily="@font/comici"
+                        android:gravity="center"
+                        android:text="Click to Start"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/iv_arrow_right" />
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/native_ad_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comici_medium"
+            android:gravity="center"
+            android:text="@string/ad_loading"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

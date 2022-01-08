@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp"
         android:layout_margin="@dimen/_4sdp"
-        app:cardUseCompatPadding="true"
         android:background="@drawable/bg_white_round"
+        app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,9 +38,9 @@
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/comici_medium"
                 android:singleLine="true"
                 android:text="TextView"
-                android:fontFamily="@font/comici_medium"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/videothum"
@@ -52,8 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="10dp"
-                android:text="TextView"
                 android:fontFamily="@font/comici_medium"
+                android:text="TextView"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/videotitle"
@@ -64,6 +64,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-
-
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

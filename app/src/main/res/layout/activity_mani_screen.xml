@@ -16,8 +16,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
@@ -30,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:text="Connect to TV"
-                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/bg_round_transperent_red"
                 android:textAllCaps="false">
@@ -73,7 +74,7 @@
                 android:id="@+id/video_player"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/bg_round_transperent_blue"
                 android:text="Connect to TV"
@@ -115,8 +116,9 @@
                 android:id="@+id/gallery"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
                 android:background="@drawable/bg_round_transperent_green"
                 android:text="Connect to TV"
                 android:textAllCaps="false">

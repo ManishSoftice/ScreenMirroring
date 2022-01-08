@@ -1,5 +1,6 @@
 package com.jenuvid.scrnmirroring.Adapter;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
@@ -17,7 +18,8 @@ import com.example.softice.ad.AdShow;
 import com.example.softice.ad.HandleClick.HandleClick;
 import com.example.softice.utils.AdUtils;
 import com.jenuvid.scrnmirroring.R;
-import com.jenuvid.scrnmirroring.VideoPlayer.VideoProjectorActivity;
+import com.jenuvid.scrnmirroring.Utils.Constat;
+import com.jenuvid.scrnmirroring.VideoPlayer.ProjectorThemeActivity;
 import com.jenuvid.scrnmirroring.model.VideoModel;
 
 import java.text.CharacterIterator;
@@ -76,7 +78,8 @@ public class AllVideoAdapter extends RecyclerView.Adapter<AllVideoAdapter.Myclas
                     AdShow.getInstance(activity).ShowAd(new HandleClick() {
                         @Override
                         public void Show(boolean adShow) {
-                            activity.startActivity(new Intent(activity, VideoProjectorActivity.class).putExtra("url", videoList.get(getAdapterPosition()).getStr_path()));
+                            Constat.videopath = videoList.get(getAdapterPosition()).getStr_path();
+                            activity.startActivity(new Intent(activity, ProjectorThemeActivity.class));
 
                         }
                     }, AdUtils.ClickType.MAIN_CLICK);

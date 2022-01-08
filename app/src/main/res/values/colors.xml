@@ -12,4 +12,7 @@
     <color name="green">#3AD355</color>
     <color name="green_tranperent">#263AD355</color>
     <color name="dark_blue">#5C00FFD4</color>
+    <color name="double_dark_blue">#005CFB</color>
+    <color name="pink">#FB00DA</color>
+    <color name="yellow">#FB8600</color>
 </resources>

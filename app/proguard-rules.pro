@@ -119,6 +119,7 @@
 
 
 -keepclassmembers class  com.jenuvid.scrnmirroring.model** { <fields>; }
+-keepclassmembers class  com.jenuvid.scrnmirroring.Utils** { <fields>; }
 
 
 -keepclassmembers class  com.example.softice.model** { <fields>; }

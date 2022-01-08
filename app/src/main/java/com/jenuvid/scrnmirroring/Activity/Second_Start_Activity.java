@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.softice.ad.AdShow;
 import com.example.softice.ad.HandleClick.HandleClick;
 import com.example.softice.utils.AdUtils;
+import com.jenuvid.scrnmirroring.connect_TV.HowToUseActivity;
 import com.jenuvid.scrnmirroring.databinding.ActivitySecondStartBinding;
 
 public class Second_Start_Activity extends AppCompatActivity {
@@ -44,6 +45,19 @@ public class Second_Start_Activity extends AppCompatActivity {
             }
         });
 
+        x.howToUse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AdShow.getInstance(activity).ShowAd(new HandleClick() {
+                    @Override
+                    public void Show(boolean adShow) {
+                        startActivity(new Intent(activity, HowToUseActivity.class));
+                    }
+                }, AdUtils.ClickType.MAIN_CLICK);
+
+            }
+        });
+
     }
 
     @Override
@@ -62,5 +76,6 @@ public class Second_Start_Activity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         AdShow.getInstance(activity).ShowNativeAd(x.nativeAdLayout.nativeAdLayout, AdUtils.NativeType.NATIVE_BIG);
+        AdShow.getInstance(activity).ShowNativeAd(x.nativeAdLayout2, AdUtils.NativeType.NATIVE_BANNER);
     }
 }

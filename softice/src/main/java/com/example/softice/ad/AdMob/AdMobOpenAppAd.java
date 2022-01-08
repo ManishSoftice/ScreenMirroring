@@ -9,7 +9,6 @@ import android.app.Activity;
 import android.app.Application;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleObserver;
@@ -70,12 +69,11 @@ public class AdMobOpenAppAd implements LifecycleObserver, Application.ActivityLi
                 public void onAdLoaded(@NonNull AppOpenAd ad) {
                     AdMobOpenAdModel adMobOpenAdModel = new AdMobOpenAdModel(adMobOpenAdModels.get(CurrentOpenAdPosition).getAdUnit(), ad, (new Date()).getTime());
                     adMobOpenAdModels.set(CurrentOpenAdPosition, adMobOpenAdModel);
-                    Log.d(TAG,"OpenAdsTest====>AdLoaded");
                 }
 
                 @Override
                 public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                    Log.d(TAG,"OpenAdsTest====>loadAdError");
+
                 }
 
             };
@@ -121,14 +119,13 @@ public class AdMobOpenAppAd implements LifecycleObserver, Application.ActivityLi
                                     adMobOpenAdModels.set(CurrentOpenAdPosition, adMobOpenAdModel);
                                     LoadAd();
                                     HandleOpenAd(false);
-                                    Log.d(TAG,"OpenAdsTest====>FailedToShowFull");
 
                                 }
 
                                 @Override
                                 public void onAdShowedFullScreenContent() {
                                     isShowingAd = true;
-                                    Log.d(TAG,"OpenAdsTest====>Show");
+
 
                                 }
                             };
@@ -170,7 +167,6 @@ public class AdMobOpenAppAd implements LifecycleObserver, Application.ActivityLi
                                                     adMobOpenAdModels.set(CurrentOpenAdPosition, adMobOpenAdModel);
                                                     LoadAd();
                                                     HandleOpenAd(true);
-
                                                 }
 
                                                 @Override
@@ -179,13 +175,12 @@ public class AdMobOpenAppAd implements LifecycleObserver, Application.ActivityLi
                                                     adMobOpenAdModels.set(CurrentOpenAdPosition, adMobOpenAdModel);
                                                     LoadAd();
                                                     HandleOpenAd(false);
-                                                    Log.d(TAG,"OpenAdsTest====>FailedToShowFull");
                                                 }
 
                                                 @Override
                                                 public void onAdShowedFullScreenContent() {
                                                     isShowingAd = true;
-                                                    Log.d(TAG,"OpenAdsTest====>Show");
+
                                                 }
                                             };
 
@@ -202,7 +197,7 @@ public class AdMobOpenAppAd implements LifecycleObserver, Application.ActivityLi
                             @Override
                             public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                                 LoadAd();
-                                Log.d(TAG,"OpenAdsTest====>loadAdError");
+
                                 HandleOpenAd(false);
 
                             }
@@ -228,7 +223,6 @@ public class AdMobOpenAppAd implements LifecycleObserver, Application.ActivityLi
 
 
     private AdRequest getAdRequest() {
-        Log.d(TAG,"OpenAdsTest====>Request");
         return new AdRequest.Builder().build();
     }
 

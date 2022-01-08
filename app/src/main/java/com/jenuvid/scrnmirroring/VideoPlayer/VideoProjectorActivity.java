@@ -19,7 +19,9 @@ import com.example.softice.ad.AdShow;
 import com.example.softice.ad.HandleClick.HandleClick;
 import com.example.softice.utils.AdUtils;
 import com.jenuvid.scrnmirroring.R;
-
+import com.jenuvid.scrnmirroring.Utils.Constat;
+import com.jenuvid.scrnmirroring.Utils.VideoProjector;
+import com.jenuvid.scrnmirroring.Utils.moblieclick;
 
 public class VideoProjectorActivity extends AppCompatActivity {
 
@@ -51,7 +53,6 @@ public class VideoProjectorActivity extends AppCompatActivity {
     ImageView iv_device;
     ImageView iv_back;
     LinearLayout smallLinearLayout;
-    String video_path;
     private int position;
     private int currentApiVersion;
 
@@ -85,7 +86,6 @@ public class VideoProjectorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_projector);
         activity = this;
         position = getIntent().getIntExtra("background", 0);
-        video_path = getIntent().getStringExtra("url");
 
         vv_1 = findViewById(R.id.vv_1);
         vv_2 = findViewById(R.id.vv_2);
@@ -98,21 +98,69 @@ public class VideoProjectorActivity extends AppCompatActivity {
         ivLightB = findViewById(R.id.ivLightB);
         iv_device = findViewById(R.id.iv_device);
         iv_back = findViewById(R.id.backImg);
+        ivPrevious = findViewById(R.id.ivPrevious);
+        ivNext = findViewById(R.id.ivNext);
         ivLightB.setBackgroundResource(R.drawable.movie_light);
         ivLightB.setVisibility(View.VISIBLE);
-
-        vv_2.setVideoPath(video_path);
+        Bundle bundle2 = new Bundle();
+        bundle2.putInt("type", 0);
+        bundle2.putString("path", Constat.videopath);
+        Bundle bundle3 = new Bundle();
+        bundle3.putInt("type", 1);
+        bundle3.putString("path", Constat.videopath);
+        vv_2.setVideoPath(Constat.videopath);
         vv_2.setOnPreparedListener(new mediaplayer2());
         Handler handler = new Handler();
         handler.postDelayed(new seekbar(handler), 1000);
         pause.setOnClickListener(new click());
         seekbar.setOnSeekBarChangeListener(new seekbarchange());
-        vv_1.setVideoPath(video_path);
+        vv_1.setVideoPath(Constat.videopath);
         vv_1.setOnPreparedListener(new mediaplayer());
+        VideoProjector videoProjector = new VideoProjector(this);
+        C.postDelayed(videoProjector, 5000);
+        findViewById(R.id.rlMobile).setOnClickListener(new moblieclick(this, videoProjector));
+        ivScreen.setImageResource(Constat.GetThemes().get(position).getThemelistapply());
+        iv_device.setImageResource(Constat.GetThemes().get(position).getDevice());
 
         ivLightB.setBackgroundResource(R.drawable.movie_light);
+//        animationDrawable = new AnimationDrawable();
         iv_back.setOnClickListener(view -> onBackPressed());
 
+        ivPrevious.setOnClickListener(view -> {
+
+            if (position > 0) {
+                position--;
+                ivScreen.setImageResource(Constat.GetThemes().get(position).getThemelistapply());
+                iv_device.setImageResource(Constat.GetThemes().get(position).getDevice());
+
+                SetPreNextVisibility();
+
+            }
+        });
+        ivNext.setOnClickListener(view -> {
+
+            if (position < Constat.GetThemes().size() - 1) {
+                position++;
+                ivScreen.setImageResource(Constat.GetThemes().get(position).getThemelistapply());
+                iv_device.setImageResource(Constat.GetThemes().get(position).getDevice());
+                SetPreNextVisibility();
+
+
+            }
+        });
+    }
+
+    private void SetPreNextVisibility() {
+        if (position <= 0) {
+            ivPrevious.setVisibility(View.GONE);
+            ivNext.setVisibility(View.VISIBLE);
+        } else if (position >= Constat.GetThemes().size() - 1) {
+            ivPrevious.setVisibility(View.VISIBLE);
+            ivNext.setVisibility(View.GONE);
+        } else {
+            ivNext.setVisibility(View.VISIBLE);
+            ivPrevious.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override // v0.p, android.app.Activity
@@ -125,8 +173,8 @@ public class VideoProjectorActivity extends AppCompatActivity {
     @Override // v0.p, android.app.Activity
     public void onResume() {
         super.onResume();
-        new Handler().postDelayed(new mediaplayercontroller(), 100);
         AdShow.getInstance(activity).ShowNativeAd(findViewById(R.id.native_ad_layout), AdUtils.NativeType.NATIVE_BANNER);
+        new Handler().postDelayed(new mediaplayercontroller(), 100);
     }
 
     @Override // h.j, v0.p, android.app.Activity
@@ -242,6 +290,18 @@ public class VideoProjectorActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        AdShow.getInstance(activity).ShowAd(new HandleClick() {
+            @Override
+            public void Show(boolean adShow) {
+                VideoProjectorActivity.super.onBackPressed();
+            }
+        }, AdUtils.ClickType.BACK_CLICK);
+
+
+    }
+
     /* loaded from: classes.dex */
     public class mediaplayercontroller implements Runnable {
 
@@ -260,8 +320,8 @@ public class VideoProjectorActivity extends AppCompatActivity {
             }
             vv_2.stopPlayback();
             vv_1.stopPlayback();
-            vv_2.setVideoPath(video_path);
-            vv_1.setVideoPath(video_path);
+            vv_2.setVideoPath(Constat.videopath);
+            vv_1.setVideoPath(Constat.videopath);
             vv_2.setOnPreparedListener(new a());
             vv_1.setOnPreparedListener(new b());
         }
@@ -292,17 +352,5 @@ public class VideoProjectorActivity extends AppCompatActivity {
                 vv_1.pause();
             }
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-
-
-        AdShow.getInstance(activity).ShowAd(new HandleClick() {
-            @Override
-            public void Show(boolean adShow) {
-                VideoProjectorActivity.super.onBackPressed();
-            }
-        }, AdUtils.ClickType.BACK_CLICK);
     }
 }

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.softice.ad.AdShow;
 import com.example.softice.ad.HandleClick.HandleClick;
 import com.example.softice.utils.AdUtils;
+import com.jenuvid.scrnmirroring.Utils.Utils;
 import com.jenuvid.scrnmirroring.databinding.ActivityFirstStartBinding;
 
 public class First_Start_Activity extends AppCompatActivity {
@@ -42,6 +43,13 @@ public class First_Start_Activity extends AppCompatActivity {
                 }, AdUtils.ClickType.MAIN_CLICK);
 
             }
+        });
+
+        x.cvPolicy.setOnClickListener(view -> {
+            startActivity(new Intent(activity, PrivacyPolicyActivity.class));
+        });
+        x.cvShare.setOnClickListener(view -> {
+            Utils.shareApp(activity);
         });
 
     }
